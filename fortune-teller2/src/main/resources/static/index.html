@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	    <meta charset="uft-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortune Teller</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class='container'>
+	<h1>What's Your Fortune?</h1>
+    <form id='nameForm'>
+    <div class='form-uname'>
+       <p id='firstNameLabel' for='firstNameField'>Enter First Name:</p>
+        <input id='firstNameField' type='text' maxlength='25'></input>
+      <p id='lastNameLabel' for='lastNameField'>Enter Last Name:</p>
+        <input id='lastNameField' type='text' maxlength='25'></input>
+  <p id='ageLabel' for='ageField' >How old are you?</p>
+        <input id='ageField' type='number' min="1" max="99"></input>
+<p id='birthMonthLabel' for='birthMonthField'>What's your birth month?</p>
+        <input id='birthMonthField' type='number' min="1" max="12"></input>
+<p id='favColorLabel' for='favColorField'>What is your favorite color?</p>
+        <select name="favorite-color" id='favColorField'>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="indigo">Indigo</option>
+          <option value="violet">Violet</option>
+        </select>
+<p id='siblingNumberLabel' for='siblingNumberField'>How many brothers and sisters do you have?</p>
+        <input id='siblingNumberField' type='number' min="0" max="99"></input>
+    </div>
+    <div class='form-sub'>
+        <br><button id='subButton' type='button' class="btn-lg">Generate Your Fortune!</button>
+    </div>
+</form>
+
+<div>
+    <p id='result'></p></div>
+</div>
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
