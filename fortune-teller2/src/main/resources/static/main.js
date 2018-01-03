@@ -85,6 +85,6 @@ subButton.addEventListener('click', getFortune, false);
 
 
 function generateFortune(){
-	var fortune= document.getElementById('fortune');
+	var fortune= document.getElementById('result');
 	fortune = firstName + " " + lastName;
 }
